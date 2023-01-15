@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body .header {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+body .main {
+  background-color: #fff4f4;
+  position: relative;
+  top: 270px;
+  padding-top: 1px;
+  padding-bottom: 61px;
+}
+body .main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main .main__text {
+  margin-top: 74px;
+  margin-bottom: 25px;
+  font-size: 43px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 600;
+  color: hsl(0deg, 6%, 24%);
+  text-align: center;
+}
+body .main .main__text strong {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+body .main .main__paragraph {
+  width: 84%;
+  font-size: 14px;
+  text-align: center;
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+body .main .input {
+  width: 84%;
+  height: 52px;
+}
+body .main .input form {
+  height: 100%;
+}
+body .main .input input {
+  border: 3px solid #f1e9e9;
+  width: 100%;
+  padding: 15px;
+  padding-left: 30px;
+  border-radius: 99px;
+  color: #fcd2d2;
+  background-color: transparent;
+}
+body .main .input input::placeholder {
+  color: #e7d0d4;
+  font-weight: 400;
+}
+body .main .input input:focus {
+  outline: 0;
+}
+body .main .input button {
+  width: 80px;
+  height: 52px;
+  padding: 15px;
+  border-radius: 99px;
+  position: relative;
+  top: -52px;
+  left: calc(100% - 79px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  box-shadow: 0px 8px 15px #f2dddc;
+  cursor: pointer;
+}
+body .main .input button:hover {
+  box-shadow: 0px 10px 15px #d0bcba;
+  opacity: 0.7;
+}
+body .main .input p.input__error {
+  color: red;
+  font-size: 11px;
+  position: relative;
+  top: -45px;
+  left: 34px;
+}
+body .main .input .input__errorImg {
+  position: relative;
+  top: -38px;
+  left: calc(100% - 112px);
+}
+body .main .sucessEmail {
+  font-size: 20px;
+  color: green;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .main .sucessEmail p {
+  text-align: center;
+}
+body .main .sucessEmail span {
+  font-weight: 600;
+  opacity: 0.7;
+}
+body .main .sucessEmail a {
+  margin-top: 30px;
+  text-decoration: none;
+  color: hsl(0deg, 7%, 51%);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: rgb(161, 215, 161);
+  width: 70%;
+  border-radius: 99px;
+}
+body .main .sucessEmail a:hover {
+  opacity: 0.8;
+}
+body .banner {
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/hero-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 97px;
+}
+
+/* MODIFIERS */
+.body__bg--none,
+.input__errorImg--none,
+.sucessEmail--none,
+.input__error--none {
+  display: none !important;
+}
+
+/* MEDIAS */
+@media (max-width: 370px) {
+  body .header {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 540px) and (max-width: 728px) {
+  .banner {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    width: 100vw !important;
+    height: 400px !important;
+  }
+  .main {
+    top: 400px !important;
+  }
+  .main .main__text {
+    width: 75%;
+  }
+}
+@media (min-width: 729px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fffbfb;
+  }
+  body .body__bg--none {
+    display: block !important;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    margin-left: -200px;
+  }
+  body .main, body .banner {
+    position: initial;
+  }
+  body .container {
+    padding-left: 0;
+    padding-bottom: 0;
+    display: block !important;
+  }
+  body .content {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .content .main {
+    background-color: transparent;
+  }
+  body .content .main .main__text {
+    font-size: 60px;
+    width: 100px;
+    text-align: left;
+  }
+  body .content .main .main__paragraph {
+    text-align: left;
+    width: 93%;
+  }
+  body .content .main .input {
+    width: 90%;
+  }
+  body .header {
+    padding: 0;
+  }
+  body .banner {
+    background-image: url(../images/hero-desktop.jpg);
+    height: 100vh;
+    max-width: 610px;
+  }
+}
+@media (min-width: 1279px) {
+  .content {
+    padding-left: 160px !important;
+  }
+  .main__paragraph,
+  .input {
+    width: 377px !important;
+  }
+}
+@media (max-height: 600px) {
+  .content {
+    padding-top: 30px;
+  }
+  .container {
+    padding-top: 0px !important;
+  }
+}
