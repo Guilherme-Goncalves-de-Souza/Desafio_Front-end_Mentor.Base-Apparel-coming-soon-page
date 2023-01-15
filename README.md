@@ -27,5 +27,5 @@ Desktop design:            | Submitted state:
   
   <br><br>
 
-  <a href = ""> Veja o projeto aqui. </a>
+  <a href = "https://guilherme-goncalves-de-souza.github.io/Desafio_Front-end_Mentor.Base-Apparel-coming-soon-page/"> Veja o projeto aqui. </a>
 </div>
