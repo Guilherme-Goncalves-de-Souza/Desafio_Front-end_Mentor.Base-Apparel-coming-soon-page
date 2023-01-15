@@ -2,7 +2,7 @@
 
 Projeto feito sozinho, colocando em prática meus conhecimentos de HTML, CSS, SASS, <strong>BEM css</strong>, GIT, JavaScript DOM e <strong>TypeScript</strong>.
 
-Feito com <em>Flexbox</em>e estratégia <em><strong>Mobile first</strong></em>.
+Feito com <em>Flexbox</em> e estratégia <em><strong>Mobile first</strong></em>.
 
 Projeto adicionado no Github através do <strong>GIT</strong>.
 
